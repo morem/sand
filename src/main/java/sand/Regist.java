@@ -6,7 +6,7 @@ import sand.tal.*;
 import freemarker.template.*;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
-import javax.xml.transform.*;;
+import javax.xml.transform.*;
 import java.lang.*;
 import java.io.*;
 import java.util.*;

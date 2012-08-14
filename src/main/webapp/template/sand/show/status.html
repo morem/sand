@@ -1,0 +1,122 @@
+
+<style type="text/css">
+q{}
+
+.status
+{
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	position:relative;
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+	display:block;
+}
+.status_switch
+{
+	width:100%;
+	float:none;	
+	display:block;
+	margin:0 0 0 0;
+	padding:5px 0 25px 0 ;
+}
+
+.status_switch1
+{
+	list-style:none;
+	float:left;
+}
+
+.status_switch2
+{
+	list-style:none;
+	float:left;
+	border:1px solid #cccccc;
+	padding:3px 5px 0 5px;
+	margin:0 0 0 20px ;	
+}
+.status_switch2:hover
+{
+	cursor:pointer;
+	background:#cccccc;	
+}
+
+.status_info
+{
+	margin:0 0 0 0;
+	padding: 0 0 0 0;
+	border-bottom:1px solid #CCCCCC;
+	float:none;
+}
+
+.showcase_items
+{
+	padding: 0 0 5px 10px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.showcase_item
+{
+	float:left;
+	border-bottom:1px #999 solid;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-right:20px;
+	width:350px;
+}
+
+.status_pic_img
+{
+	width:50px;
+	height:50px;	
+	border:1px #999 solid;
+	float:left;
+}
+
+.showcase_title
+{
+	font-size:22px;	
+}
+</style>
+
+<div class="status">
+	<div>
+		<div class="status_switch">
+			<li class="status_switch1">
+			当前正在处于<h3 style="display:inline;"><#if run_stop = "stop">停止</#if><#if run_stop = "run">运行</#if></h3>状态!
+			</li>
+			<#if run_stop = "stop"><li class="status_switch2" href="/index.html/showstatus/run"></#if>
+			<#if run_stop = "run"><li class="status_switch2" href="/index.html/showstatus/stop"></#if>
+			<#if run_stop = "stop">点我启动</#if>
+			<#if run_stop = "run">点我停止</#if>运行</li>
+		</div>
+		<div>
+		<#include "status_introduct.html">
+		</div>
+		<div class="showcase_items">
+			<p><b class="showcase_title">橱窗中的商品</b> 橱窗总数:${show_case_num} 已用橱窗:${show_case_used} 剩余橱窗:${show_case_remained}</p>	
+		</div>
+		<div>
+			<#if items??>
+			<#list items as item>
+			<div class="showcase_item"><img src="${item.pic_url}" class="status_pic_img"/><div>${item.title}</div></div>
+			</#list>
+			</#if>
+		</div>
+	</div>
+	<div class="status_chart">
+	</div>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	$(".status_switch2").bind("click",function(){
+		var $to = $(this).attr("href");
+		$to = "${ip}/" + $to + "?ct=0"
+		console.log( $to);
+		$("#runing").dialog("open");
+		$("#id_contentbox").load($to,function(){$("#runing").dialog("close");});
+	})
+});	
+
+</script>
