@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="sand" extends="struts-default">
+        <action name="login" class="com.lucky.Register">
+            <result name="error" type="redirect">/error.jsp</result>
+            <result name="success" type="redirect">/show_index.action</result>
+        </action>
+        <action name="show_index" class="com.lucky.show.index.Index">
+            <result name="success" type="freemarker">/show/index.jsp</result>
+            <result name="error" type="freemarker">/show/error.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <div>
-        
-    </div>
+    发生了一个重大重大的错误
 </body>
 </html>
