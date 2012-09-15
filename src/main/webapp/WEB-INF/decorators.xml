@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+
 <decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>*show_info_runstatus*</pattern>
+        <pattern>*test*</pattern>
+        <pattern>*show_items_icon*</pattern>
+        <pattern>*show_summary*</pattern>
+        <pattern>*show_config*</pattern>
+        <pattern>*show_plan*</pattern>
+        <pattern>*show_itemPick*</pattern>
+        <pattern>*show_mainContent*</pattern>
+    </excludes> 
     <decorator name="main" page="main.jsp">
         <pattern>*</pattern>
     </decorator>
+
     <decorator name="comment" page="comment.jsp"/>
 </decorators>

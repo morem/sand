@@ -1,0 +1,49 @@
+[Open Files]
+Active File Display Mode=3
+Active File Index=0
+Open File Line0=2754
+Open File Line1=2
+Open File Line2=458
+Open File Line3=2
+Open File Line4=154961
+Open File Line5=9641
+Open File Pos0=4006
+Open File Pos1=2090
+Open File Pos2=1671
+Open File Pos3=614
+Open File Pos4=156900
+Open File Pos5=5118
+Open File Window Pos0=2,3,-1,-1,-4,-30,44,58,1015,460
+Open File Window Pos1=0,1,-1,-1,-4,-30,88,116,913,518
+Open File Window Pos2=0,1,-1,-1,-4,-30,132,174,1103,574
+Open File Window Pos3=0,1,-1,-1,-4,-30,110,145,731,547
+Open File Window Pos4=0,1,-1,-1,-4,-30,132,174,753,576
+Open File Window Pos5=0,1,-1,-1,-4,-30,22,29,643,431
+Open File0=F:\morem\sand\src\main\java\com\lucky\show\index\Index.java
+Open File1=F:\morem\sand\src\main\java\com\lucky\AuthorizationInterceptor.java
+Open File2=F:\morem\sand\src\main\java\com\lucky\Register.java
+Open File3=F:\morem\sand\src\main\resources\struts.xml
+Open File4=F:\morem\sand\log4j.log
+Open File5=F:\morem\sand\src\main\java\com\lucky\taobao\api\MTop_API.java
+Open File6=
+Remember Files=1
+
+[Project Information]
+Project Start=DC07090005000E00100037001D00000063
+Working Time=3663
+
+[Folders]
+.\src\=1
+.\src\ - main=1
+.\src\ - main - java=1
+.\src\ - main - java - com=1
+.\src\ - main - java - com - lucky=1
+.\src\ - main - webapp=1
+.\src\ - main - java - com - lucky - show - index=1
+.\src\ - test=1
+.\src\ - test - java=1
+.\src\ - test - java - sand=1
+.\src\ - main - resources=1
+.\src\ - main - java - com - lucky - show=1
+.\src\ - main - java - com - lucky - taobao=1
+.\src\ - main - java - com - lucky - taobao - api=1

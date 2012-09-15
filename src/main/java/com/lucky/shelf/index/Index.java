@@ -1,13 +1,12 @@
 package com.lucky.shelf.index;
 import org.apache.log4j.*;
 
-public class Index {
+import com.opensymphony.xwork2.Action;
+
+public class Index  implements Action {
 	static Logger logger = Logger.getLogger(Index.class.getName());
 	public String execute () throws Exception
 	{
-		logger.debug("-debug---------------------------------------------");
-		logger.info ("-info---------------------------------------------");
-		logger.warn("-error---------------------------------------------");
-		return "error";		
+		return SUCCESS;		
 	}
 }

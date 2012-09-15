@@ -56,6 +56,7 @@ public class Register implements Action  {
 	        userXMLData.SetTimeOffset (visitor_id, offset);
 	        logger.debug (map.toString());
 		}catch(Exception e){
+			ActionContext.getContext().getSession().put("user", "Guest");
 			logger.error(e);
 			return ERROR;
 		}

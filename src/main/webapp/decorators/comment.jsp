@@ -3,6 +3,7 @@
 <%@ taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator" %>
 
 <div style="border:solid #CCCCCC 1px;">
-    <decorator:body />
-    <div style="border:solid #FF0000 1px;">${talk}</div>
+    <div style="border:solid #FF0000 1px;">
+    <decorator:body/>
+    </div>
 </div>

@@ -437,7 +437,10 @@ public class MUserData extends Object{
 
     public String GetShowCaseMode(String id)
     {
-        return GetUserData(id, "/user/showcase/runmode");
+    	String mode;
+        mode = GetUserData(id, "/user/showcase/runmode");
+        if (mode == null)return "all";
+        return mode;
     }
 
     public boolean SetForceShow(String id, List<String> list)

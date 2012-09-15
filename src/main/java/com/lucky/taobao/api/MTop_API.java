@@ -61,7 +61,7 @@ public class MTop_API extends Object
         
         ShopRemainshowcaseGetRequest req=new ShopRemainshowcaseGetRequest();
 
-        if (id.equals("Guest"))
+        if (id.equals("Guest") || id == null)
         {
             MUser usr = new MUser();
             usr.showCaseNum = 40;
@@ -140,10 +140,13 @@ public class MTop_API extends Object
         return null;
     }
     
-    public List<MItem> getItems(String id, String title, Long cid, 
-                               String seller_cid, Long page_no, 
-                               Long has_showcase, String order, Long page_size)
+    public List<MItem> getItems(String id, String title, long cid, 
+                               String seller_cid, long page_no, 
+                               long has_showcase, String order, long page_size)
     {
+    	if (id == "Guest"){
+    		return new ArrayList<MItem> ();
+    	};
         TaobaoClient client=new DefaultTaobaoClient(new MBaseInfo().url(), 
                 new MBaseInfo().appKey(), 
                 new MBaseInfo().appSecret());
@@ -540,7 +543,7 @@ public class MTop_API extends Object
             }
         }
         return null;
-    }
+    }
 
 }
 

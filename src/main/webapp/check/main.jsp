@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-    我只是一个小小的说明 I am only a little
+我是宝测查
 </body>
 </html>
